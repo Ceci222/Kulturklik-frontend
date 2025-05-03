@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
 import Banner from './components/Banner';
 import SearchBar from './components/SearchBar';
+import EventInfoPanel from './components/EventInfoPanel';
 import EventList from './components/EventList';
-import VideoSection from './components/VideoSection';
+import UpcomingEvents from './components/UpcomingEvents';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
     <SearchBar />
     <EventInfoPanel/>
     <EventList />
-    <VideoSection />
     <UpcomingEvents />
     <Footer />
   </div>
