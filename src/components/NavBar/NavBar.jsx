@@ -24,7 +24,6 @@ function NavBar({onFilter}) {
       
         <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Concierto"); }}>Conciertos</a></li>
         <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Fiestas"); }}>Fiestas</a></li>
-        <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Bertsolarismo"); }}>Bertsolarismo</a></li>
         <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Conferencia"); }}>Conferencias</a></li>
         <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Cine y audiovisuales"); }}>Cine y audiovisuales</a></li>
         <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Otro"); }}>Otros</a></li>

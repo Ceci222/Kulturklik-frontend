@@ -41,15 +41,16 @@ const EventList = () => {
     return (
         <div>
             <h1>Eventos de Kulturklik</h1>
-            <ul className="eventList__list">
+            <ul className="eventList-list">
                 {events.map((event, index) => { //events refiere a la variable que almacena los datos obtenidos: const [events, setEvents] = useState([]);
-                    return (
+                    return ( 
                         <li key={event.id}>  {/* Usar el id del evento como 'key' */}
                             <h2>{event.nameEs || "Sin nombre del evento"}</h2>  
                             <p>{event.municipalityEs || "Municipio no disponible"}</p> 
                             <p>{event.typeEs || "Tipo de evento no especificado"}</p> 
                             <p>{event.openingHoursEs || "Horario no disponible"}</p>
-                            <p>{event.endDate.split('T')[0].split('-').reverse().join('/')|| "Fecha no disponible"}</p>   
+                            <p>Desde: {event.startDate.split('T')[0].split('-').reverse().join('/') || "Fecha no disponible"}</p>
+                            <p>Hasta: {event.endDate.split('T')[0].split('-').reverse().join('/')|| "Fecha no disponible"}</p>   
                             {/* <p>{new Date(event.endDate).toLocaleDateString('es-ES', {
                                 day: 'numeric',
                                 month: 'long',

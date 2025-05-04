@@ -19,10 +19,10 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/conciertos" element={<EventsPage />} />
           <Route path="/Fiestas" element={<EventsPage />} />
-          <Route path="/Bertsolarismo" element={<EventsPage />} />
           <Route path="/conferencias" element={<EventsPage />} />
           <Route path="/cine-y-audiovisuales" element={<EventsPage />} />
           <Route path="/otros" element={<EventsPage />} />
+          <Route path="/upcoming" element={<UpcomingEvents />} />
         </Routes>
       </div>
     </BrowserRouter>

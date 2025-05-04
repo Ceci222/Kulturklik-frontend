@@ -65,7 +65,6 @@ function EventsPage() {
         'Teatro',
         'Danza',
         'Exposición',
-        'Bertsolarismo',
         'Formación',
         'Concurso',
         'Evento/Jornadas',
