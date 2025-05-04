@@ -6,7 +6,9 @@ async function fetchData(route, method = "GET", data = null) {
 
     const options = {  // objeto que configura cómo se debe realizar la solicitud HTTP, el método, los encabezados y cuerpo de la solcitud
         method: method,
-        headers: {}
+        headers: {
+            'Accept': 'application/json; charset=utf-8', //para que vuelvan con caracteres en español
+          },
     };
 
     // Si hay datos, se agregan al cuerpo de la solicitud y se establece el Content-Type
